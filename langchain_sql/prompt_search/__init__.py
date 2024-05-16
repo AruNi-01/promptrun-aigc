@@ -6,6 +6,7 @@ from langchain_sql.prompt_search.user_input_deal_chain import _deal_user_input
 
 
 def find_result_by_sql_langchain(user_input: str) -> str:
+    print(f"用户输入: {user_input}")
     ctx = PromptSearchContext(user_input=user_input)
     _deal_user_input(context=ctx)
     _generate_sql(context=ctx)

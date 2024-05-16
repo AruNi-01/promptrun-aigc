@@ -12,3 +12,6 @@ class AppConfigSettings(BaseSettings):
     db_user: str
     db_password: str
     db_database: str
+
+    """LLM 配置"""
+    transfer_proxy: str
